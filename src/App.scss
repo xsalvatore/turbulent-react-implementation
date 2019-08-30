@@ -1,139 +1,141 @@
+/* ========== variables ========== */
 $white-base: #ffffff;
 $black-base: #111111;
 $dark-blue: #123156;
 $light-blue: #69addb;
 
+/* ========== defaults ========== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "overpass";
-  font-weight: 300;
-  color: $black-base;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'overpass';
+	font-weight: 300;
+	color: $black-base;
 }
 
 .app {
-  /* ========== header ========== */
-  header {
-    background-color: $dark-blue;
-    padding: 1rem;
-    margin-bottom: 1rem;
+	/* ========== header ========== */
+	header {
+		background-color: $dark-blue;
+		padding: 1rem;
+		margin-bottom: 1rem;
 
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
 
-      h1 {
-        font-size: 1.66666rem;
-        margin-bottom: 1rem;
-        color: $white-base;
-        font-weight: 500;
-      }
+			h1 {
+				font-size: 1.66666rem;
+				margin-bottom: 1rem;
+				color: $white-base;
+				font-weight: 500;
+			}
 
-      p {
-        color: $white-base;
+			p {
+				color: $white-base;
 
-        &:not(:last-of-type) {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
+				&:not(:last-of-type) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
 
-  /* ========== grid ========== */
-  .grid-container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 1rem;
+	/* ========== grid ========== */
+	.grid-container {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 1rem;
 
-    .grid {
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: auto;
-      margin-bottom: 1rem;
+		.grid {
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: auto;
+			margin-bottom: 1rem;
 
-      .grid-item {
-        padding: 3rem;
-        text-align: center;
-        border: 1px solid $black-base;
-      }
-    }
+			.grid-item {
+				padding: 3rem;
+				text-align: center;
+				border: 1px solid $black-base;
+			}
+		}
 
-    button {
-      display: block;
-      appearance: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      background-color: $light-blue;
-      border: 1px solid $black-base;
-      margin: 0 auto 1rem auto;
+		button {
+			display: block;
+			appearance: none;
+			padding: 1rem 2rem;
+			font-size: 1rem;
+			background-color: $light-blue;
+			border: 1px solid $black-base;
+			margin: 0 auto 1rem auto;
 
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 /* ========== medium devices ========== */
 
 @media screen and (min-width: 768px) {
-  .app {
-    /* ========== header ========== */
-    header {
-      .container {
-        h1 {
-          font-size: 2rem;
-        }
+	.app {
+		/* ========== header ========== */
+		header {
+			.container {
+				h1 {
+					font-size: 2rem;
+				}
 
-        p {
-          max-width: 83.33333%;
-        }
-      }
-    }
+				p {
+					max-width: 83.33333%;
+				}
+			}
+		}
 
-    /* ========== grid ========== */
-    .grid-container {
-      .grid {
-        grid-template-columns: auto auto;
+		/* ========== grid ========== */
+		.grid-container {
+			.grid {
+				grid-template-columns: auto auto;
 
-        .grid-item {
-          margin: 0;
-        }
-      }
+				.grid-item {
+					margin: 0;
+				}
+			}
 
-      button {
-        margin: 0 0 1rem 0;
-        display: block;
-        appearance: none;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        border: 1px solid $dark-blue;
-      }
-    }
-  }
+			button {
+				margin: 0 0 1rem 0;
+				display: block;
+				appearance: none;
+				padding: 1rem 2rem;
+				font-size: 1rem;
+				border: 1px solid $dark-blue;
+			}
+		}
+	}
 }
 
 /* ========== large devices ========== */
 
 @media screen and (min-width: 992px) {
-  .app {
-    /* ========== grid ========== */
-    .grid-container {
-      padding: 0;
-    }
-  }
+	.app {
+		/* ========== grid ========== */
+		.grid-container {
+			padding: 0;
+		}
+	}
 }
 
 /* ========== x-large devices ========== */
 
 @media screen and (min-width: 1200px) {
-  .app {
-    /* ========== grid ========== */
-    .grid-container {
-      .grid {
-        grid-template-columns: auto auto auto;
-      }
-    }
-  }
+	.app {
+		/* ========== grid ========== */
+		.grid-container {
+			.grid {
+				grid-template-columns: auto auto auto;
+			}
+		}
+	}
 }
